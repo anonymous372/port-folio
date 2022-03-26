@@ -15,7 +15,7 @@ const projectData = [
         code_link: "https://github.com/anonymous372/YelpCamp",
         live_link: "https://yelpcamp-anonymous372.herokuapp.com/",
         desc: "",
-        img: "./yelp.png",
+        img: img1,
         vid: "/"
     },
     {
@@ -23,7 +23,7 @@ const projectData = [
         code_link: "https://github.com/anonymous372/Blog-App",
         live_link: "https://blogapp-anonymous372.herokuapp.com/",
         desc: "",
-        img: "./blog.png",
+        img: img2,
         vid: "/"
     },
     {
