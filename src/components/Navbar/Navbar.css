@@ -1,0 +1,36 @@
+#navbar{
+
+    padding: 15px 0px 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+#navbar .left a{
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar .left a:hover{
+    transform: scale(1.05);
+    transition: 0.2s;   
+}
+
+#navbar .right{
+    display: flex;
+    /* width: 25%; */
+    justify-content: space-around;
+}
+#navbar .right a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+#navbar .right a:hover{
+    /* border-bottom: 1px solid black; */
+    text-decoration: underline;
+    transition: 1s;
+}
