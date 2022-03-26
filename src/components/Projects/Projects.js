@@ -3,13 +3,19 @@ import "./Projects.css"
 
 import Project from './Project/Project';
 
+import img1 from "../../images/yelp.png"
+import img2 from "../../images/blog.png"
+import img3 from "../../images/holdlin.png"
+import img4 from "../../images/sort.png"
+import img5 from "../../images/sample.png"
+
 const projectData = [
     {
         name: "YelpCamp",
         code_link: "https://github.com/anonymous372/YelpCamp",
         live_link: "https://yelpcamp-anonymous372.herokuapp.com/",
         desc: "",
-        img: "/yelp.png",
+        img: img1,
         vid: "/"
     },
     {
@@ -17,7 +23,7 @@ const projectData = [
         code_link: "https://github.com/anonymous372/Blog-App",
         live_link: "https://blogapp-anonymous372.herokuapp.com/",
         desc: "",
-        img: "/blog.png",
+        img: img2,
         vid: "/"
     },
     {
@@ -25,7 +31,7 @@ const projectData = [
         code_link: "https://github.com/anonymous372/Holdlinfo",
         live_link: "https://holdlinfo-clone.herokuapp.com/",
         desc: "",
-        img: "/holdlin.png",
+        img: img3,
         vid: "/"
     },
     {
@@ -33,7 +39,7 @@ const projectData = [
         code_link: "https://github.com/anonymous372/Sorting-Visualizer",
         live_link: "https://anonymous372.github.io/Sorting-Visualizer/",
         desc: "",
-        img: "/sort.png",
+        img: img4,
         vid: "/"
     },
     {
@@ -41,7 +47,7 @@ const projectData = [
         code_link: "https://github.com/anonymous372/Sample-Website",
         live_link: "https://anonymous372.github.io/Sample-Website/",
         desc: "",
-        img: "/sample.png",
+        img: img5,
         vid: "/"
     }
 

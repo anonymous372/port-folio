@@ -1,6 +1,8 @@
 import React,{useEffect,useState} from 'react';
 import "./About.css"
 
+import myImg from "../../images/me_sourabh_bg.png"
+
 const About = () => {
     const [flag,setFlag] = useState(true) 
     
@@ -13,7 +15,7 @@ const About = () => {
     else{
         return(
             <div id="about">
-                <img id="my_img" src="/me_sourabh_bg.png"/>
+                <img id="my_img" src={myImg}/>
                 <div id="about-txt">
                     Hi, I am <span>Sourabh Shukla</span>. I am currently doing
                     my BSc(H) Computer Science from Delhi University.
