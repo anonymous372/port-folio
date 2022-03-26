@@ -15,7 +15,7 @@ const About = () => {
     else{
         return(
             <div id="about">
-                <img id="my_img" src={myImg}/>
+                <img id="my_img" src="./me_sourabh_bg.png"/>
                 <div id="about-txt">
                     Hi, I am <span>Sourabh Shukla</span>. I am currently doing
                     my BSc(H) Computer Science from Delhi University.
