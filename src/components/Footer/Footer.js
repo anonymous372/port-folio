@@ -13,7 +13,7 @@ const Footer = () => {
             <h3>Contacts</h3>
             <div className="contacts">
                 <FaGithub onClick={() => handleClick("https://github.com/anonymous372")} className='icon'/>
-                <FaLinkedin onClick={() => handleClick("https://linkedin.com/")} className='icon'/>
+                <FaLinkedin onClick={() => handleClick("https://www.linkedin.com/in/sourabh-shukla-178b2121b/")} className='icon'/>
                 <FaEnvelopeSquare onClick={() => handleClick("https://mail.google.com/mail/u/0/?fs=1&to=inter.sourabh@example.com")}className='icon'/>
             </div>
         </div>

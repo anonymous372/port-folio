@@ -1,6 +1,6 @@
 .project{
     width:30%;
-    padding: 10px;
+    padding: 1%;
     margin: 20px 0;
     box-shadow: 0px 0px 6px white;
     border-radius: 5px;
@@ -8,8 +8,11 @@
 .project:hover{
     box-shadow: 0 0 10px white;
     transition: 0.2s;
+    /* transform: rotateY(180deg);
+    transition: 1.2s; */
 }
 .project h2{
+    font-size: 1.5vw;
     margin: 0 0 10px;
     transform: translateY(0%);
 }
