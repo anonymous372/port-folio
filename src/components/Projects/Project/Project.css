@@ -6,13 +6,16 @@
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+    
+    /*  */
+    width: 400px;
 }
 .project:hover{
     box-shadow: 0 0 10px white;
     transition: 0.2s;
 }
 .project h2{
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     margin: 0 0 10px;
     transform: translateY(0%);
 }
@@ -39,8 +42,11 @@
     text-align: center;
 }
 .project .info p{
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
     margin: 10% 5% 5%;
+
+    /*  */
+    font-size: 18px;
 }
 
 .project #btn-cont{
@@ -64,4 +70,15 @@
 }
 .project #btn-cont a:hover{
     transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 600px){
+    .project .info p{
+        font-size: 3.0vw;
+        margin: 10% 5% 5%;
+    }
+    .project h2 { 
+        font-size: 4vw;
+    }
 }
