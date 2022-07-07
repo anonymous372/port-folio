@@ -1,84 +1,110 @@
-.project{
-    width:30%;
-    padding: 1%;
-    margin: 20px 0;
-    box-shadow: 0px 0px 6px white;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    
-    /*  */
-    width: 400px;
+.project {
+  width: 30%;
+  padding: 1%;
+  margin: 20px 0;
+  box-shadow: 0px 0px 6px white;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+
+  /*  */
+  width: 400px;
 }
-.project:hover{
-    box-shadow: 0 0 10px white;
-    transition: 0.2s;
+.project:hover {
+  box-shadow: 0 0 10px white;
+  transition: 0.2s;
 }
-.project h2{
-    /* font-size: 1.5vw; */
-    margin: 0 0 10px;
-    transform: translateY(0%);
+.project h2 {
+  margin: 0 0 10px;
+  transform: translateY(0%);
 }
-.project img{
-    width:100%;
+.project img {
+  width: 100%;
 }
 
 /* Project Info  */
-
-.project:hover .info{
-    display: block;
-    transition: 1s;
+.project .info {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+}
+.project:hover .info {
+  opacity: 1;
 }
 
-.project .info{
-    display: none;
-    background-color: rgba(0,0,0,0.6);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    margin: 0;
-    text-align: center;
+.project .info p {
+  margin: 10% 5% 5%;
+  font-size: 18px;
 }
-.project .info p{
-    /* font-size: 1.2vw; */
+
+/* $$$$$$$ */
+.project:hover div.info {
+}
+.project div.info p {
+  transition: all 0.4s ease-out;
+  transform: scale(0);
+  opacity: 0;
+}
+.project:hover div.info p {
+  transform: scale(1);
+  opacity: 1;
+}
+/* $$$$$$$ */
+
+.project #btn-cont {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+.project #btn-cont a {
+  padding: 2% 7%;
+  font-size: 1.5vw;
+  border-radius: 5px;
+  background-color: #203239;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+
+/* Animation of button to come from side */
+.project #btn-cont a:first-child {
+  position: absolute;
+  left: -200px;
+}
+.project #btn-cont a:last-child {
+  position: absolute;
+  right: -200px;
+  background-color: #4d77ff;
+}
+.project:hover #btn-cont a:first-child {
+  left: 0;
+  position: relative;
+}
+.project:hover #btn-cont a:last-child {
+  right: 0;
+  position: relative;
+}
+.project #btn-cont a:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 600px) {
+  .project .info p {
+    font-size: 3vw;
     margin: 10% 5% 5%;
-
-    /*  */
-    font-size: 18px;
-}
-
-.project #btn-cont{
-    position: absolute;
-    bottom: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-}
-.project #btn-cont a{
-    padding: 2% 7%;
-    font-size: 1.5vw;
-    border-radius: 5px;
-    background-color: #203239;
-    color: white;
-}
-.project #btn-cont a:last-child{
-    background-color: #4D77FF;
-}
-.project #btn-cont a:hover{
-    transform: scale(1.05);
-}
-
-
-@media screen and (max-width: 600px){
-    .project .info p{
-        font-size: 3.0vw;
-        margin: 10% 5% 5%;
-    }
-    .project h2 { 
-        font-size: 4vw;
-    }
+  }
+  .project h2 {
+    font-size: 4vw;
+  }
 }

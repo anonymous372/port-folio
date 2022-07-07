@@ -1,0 +1,13 @@
+To Deploy Changes
+    git add .
+    git commit -m "did this and that"
+    npm run deploy
+
+
+##############
+
+
+To do : 
+    * Handle Image size
+    * Handle Font size
+    * Add Animation
