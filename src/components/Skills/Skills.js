@@ -4,10 +4,13 @@ import "./Skills.css";
 import { FaNodeJs, FaDatabase, FaReact, FaCss3, FaHtml5 } from "react-icons/fa";
 import exIcon from "../../images/expressjs.svg";
 
-const Skills = () => {
+const Skills = ({ theme }) => {
+  const bgClass = theme === "light" ? "#deeeea" : "#2A2A2A";
+  const textClass = theme === "light" ? "#393232" : "#ddd";
+
   return (
-    <div id="skills">
-      <h1>Skills</h1>
+    <div id="skills" style={{ backgroundColor: bgClass }}>
+      <h1 style={{ color: textClass }}>Skills</h1>
       <div id="skill-list">
         <div className="skill">
           <FaNodeJs className="icon"></FaNodeJs> Node

@@ -1,24 +1,25 @@
-import React from 'react';
-import "./App.css"
+import React, { useEffect, useState } from "react";
+import "./App.css";
 
 // Components
-import Navbar from "./components/Navbar/Navbar"
-import About from "./components/About/About" 
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
-import Footer from './components/Footer/Footer';
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
+import Skills from "./components/Skills/Skills";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  return(
-    <div id="app">
-      <Navbar/>
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Footer />
+  const [theme, setTheme] = useState("light");
+  const backgroundClass = theme === "light" ? "#f0f0f0" : "#202020";
+  return (
+    <div id="app" style={{ backgroundColor: backgroundClass }}>
+      <Navbar setTheme={setTheme} theme={theme} />
+      <About theme={theme} />
+      <Projects theme={theme} />
+      <Skills theme={theme} />
+      <Footer theme={theme} />
     </div>
-  )
+  );
+};
 
-}
-
-export default App
+export default App;

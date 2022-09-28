@@ -1,15 +1,16 @@
-#projects{
-    background-color: #1A1A40;
-    color: white;
-    padding: 2% 5%;
+#projects {
+  background-color: #1a1a40;
+  color: white;
+  padding: 2% 5%;
+  margin-top: -2px;
 }
-#projects h1{
-    text-align: center;
+#projects h1 {
+  text-align: center;
 }
 
-#projects-cont{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: space-around;
-} 
+#projects-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+}

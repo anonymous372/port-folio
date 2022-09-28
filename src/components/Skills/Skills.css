@@ -1,36 +1,37 @@
-#skills{
-    color: #393232;
-    padding: 5% 10%;
-    background-color: #DEEEEA;
+#skills {
+  color: #393232;
+  padding: 5% 10%;
+  background-color: #deeeea;
 }
 
-#skill-list{
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#skill-list {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-#skill-list .skill{
-    padding: 15px 20px;
-    background-color: #0E185F;
-    width: 10%;
-    min-width: 100px;
-    border-radius: 5px;
-    margin: 2% 0;
-    font-size: 20px;
+#skill-list .skill {
+  padding: 15px 20px;
+  background-color: #0e185f;
+  width: 10%;
+  min-width: 100px;
+  border-radius: 5px;
+  margin: 2% 0;
+  font-size: 20px;
 
-    display: flex;
-    align-items: center;
-}   
+  display: flex;
+  align-items: center;
+}
 
 /* Express js icon */
-#skill-list .skill img{
-    filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(319deg) brightness(107%) contrast(100%);
+#skill-list .skill img {
+  filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(319deg)
+    brightness(107%) contrast(100%);
 }
-#skill-list div{
-    color: white;
+#skill-list div {
+  color: white;
 }
-#skill-list .icon{
-    margin-right: 5px;
+#skill-list .icon {
+  margin-right: 5px;
 }

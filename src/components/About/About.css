@@ -4,12 +4,15 @@
   box-shadow: 0 2px 4px gray;
   height: 70vh;
   border-radius: 50vh;
+  transition: all 0.6s;
 }
 #about {
   flex-direction: column;
   text-align: center;
   justify-content: center;
   padding: 2%;
+  color: #393232;
+  transition: color 0.3s;
 }
 #about-txt {
   width: 100%;
