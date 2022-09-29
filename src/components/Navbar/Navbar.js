@@ -30,6 +30,23 @@ const Navbar = ({ theme, setTheme }) => {
         <a href="#navbar" style={{ color: textClass }}>
           Sourabh
         </a>
+        {theme === "dark" ? (
+          <div
+            className="themeBtn mobile"
+            onClick={toggleTheme}
+            style={{ backgroundColor: bgClass, boxShadow: shadowClassBtn }}
+          >
+            <FaSun style={{ color: textClass }}></FaSun>
+          </div>
+        ) : (
+          <div
+            className="themeBtn mobile"
+            onClick={toggleTheme}
+            style={{ backgroundColor: bgClass, boxShadow: shadowClassBtn }}
+          >
+            <FaMoon style={{ color: textClass }}></FaMoon>
+          </div>
+        )}
       </div>
       <div className="right">
         <a href="#projects" style={{ color: textClass }}>

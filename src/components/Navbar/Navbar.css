@@ -1,10 +1,12 @@
 #navbar {
-  padding: 15px 0px 15px 20px;
+  /* padding: 15px 0px 15px 20px; */
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.5);
   background-color: white;
   transition: background-color 0.6s;
+  min-height: 56px;
+  align-items: center;
 }
 
 #navbar .left a {
@@ -13,6 +15,7 @@
   text-decoration: none;
   color: black;
   transition: color 0.3s;
+  margin-left: 20px;
 }
 
 #navbar .left a:hover {
@@ -52,4 +55,28 @@
 }
 .themeBtn svg {
   color: #333;
+}
+.themeBtn.mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+  }
+  #navbar .left {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 6px 0;
+  }
+  #navbar .right {
+    padding: 6px 0;
+  }
+  .themeBtn {
+    display: none;
+  }
+  .themeBtn.mobile {
+    display: flex;
+  }
 }
