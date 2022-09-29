@@ -1,23 +1,24 @@
-#footer{
-    padding: 15px 30px 10px;
-    background-color: #3A3845;
+#footer {
+  padding: 15px 30px 10px;
+  background-color: #3a3845;
 }
-#footer h3{
-    margin: 0;
-    margin-bottom: 10px;
-    color: white;
-    font-weight: 300;
+#footer h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 300;
 }
-#footer .contacts{
-    width: 15%;
-    min-width: 120px;
-    display: flex;
-    justify-content: space-between;
+#footer .contacts {
+  display: flex;
+  gap: 24px;
 }
-#footer .icon{
-    color: white;
-    font-size: 30px;
+#footer .icon {
+  color: white;
+  height: 30px;
+  width: auto;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
-#footer .icon:hover{
-    transform: scale(1.07);
+#footer .icon:hover {
+  transform: scale(1.2);
 }

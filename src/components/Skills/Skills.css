@@ -15,15 +15,22 @@
   padding: 15px 20px;
   background-color: #0e185f;
   width: 10%;
-  min-width: 100px;
+  min-width: 120px;
   border-radius: 5px;
   margin: 2% 0;
   font-size: 20px;
-
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+#skill-list .skill .icon {
+  width: 20px;
+  height: auto;
 }
 
+#skill-list .skill:hover {
+  background-color: #001050;
+}
 /* Express js icon */
 #skill-list .skill img {
   filter: invert(99%) sepia(100%) saturate(2%) hue-rotate(319deg)
@@ -34,4 +41,15 @@
 }
 #skill-list .icon {
   margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  #skill-list .skill {
+    padding: 8px 12px;
+    font-size: 16px;
+    min-width: 100px;
+  }
+  #skill-list .skill .icon {
+    height: 16px;
+  }
 }
