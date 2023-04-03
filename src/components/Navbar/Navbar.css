@@ -6,7 +6,15 @@
   background-color: white;
   transition: background-color 0.6s;
   min-height: 56px;
+  position: fixed;
+  width: 100%;
+  top: 0;
   align-items: center;
+  z-index: 10;
+  transition: opacity 0.5s;
+}
+#navbar:hover {
+  opacity: 1;
 }
 
 #navbar .left a {

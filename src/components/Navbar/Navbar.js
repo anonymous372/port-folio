@@ -21,6 +21,27 @@ const Navbar = ({ theme, setTheme }) => {
   const bgClass = theme === "light" ? "#fff" : "#303030";
   const textClass = theme === "light" ? "#393232" : "#ddd";
 
+  function styleNavbar() {
+    var navElement = document.querySelector("#navbar");
+    // change opacity on this.scrollY in 5 stages separated by 150px
+    if (window.scrollY < 150) {
+      navElement.style.opacity = 1;
+    }
+    if (window.scrollY >= 150 && window.scrollY < 300) {
+      navElement.style.opacity = 0.9;
+    }
+    if (window.scrollY >= 300 && window.scrollY < 450) {
+      navElement.style.opacity = 0.8;
+    }
+    if (window.scrollY >= 450 && window.scrollY < 600) {
+      navElement.style.opacity = 0.7;
+    }
+    if (window.scrollY >= 600) {
+      navElement.style.opacity = 0.5;
+    }
+  }
+  window.addEventListener("scroll", styleNavbar, false);
+
   return (
     <div
       id="navbar"

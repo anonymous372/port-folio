@@ -18,13 +18,17 @@ const About = ({ theme }) => {
   } else {
     return (
       <div id="about" style={{ color: textClass }}>
-        <img id="my_img" src={myImg} style={imgClass} />
         <div id="about-txt">
-          Hi, I am <span>Sourabh Shukla</span>. I am currently doing my BSc(H)
-          Computer Science from Delhi University. I am interested in Web
-          Development using <span>MERN</span> stack. I also love doing
-          Competitive Programming.
+          <div>
+            <div id="about-head-txt">
+              Hi, I am <span>Sourabh Shukla</span>.
+            </div>
+            I am currently doing my BSc(H) Computer Science from Delhi
+            University. I am interested in Software Development using{" "}
+            <span>MERN</span> stack. I also love doing Competitive Programming.
+          </div>
         </div>
+        <img id="my_img" src={myImg} style={imgClass} />
       </div>
     );
   }

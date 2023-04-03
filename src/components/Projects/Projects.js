@@ -22,7 +22,7 @@ const projectData = [
   {
     name: "YelpCamp",
     code_link: "https://github.com/anonymous372/YelpCamp",
-    live_link: "https://yelpcamp-anonymous372.herokuapp.com/",
+    live_link: "https://yelpcamp-srzf.onrender.com/",
     desc: "This is a community site for CAMPERS. You can create your account, create or update your camprounds. Read about others camprounds and comment on them",
     img: img1,
     vid: "/",
@@ -30,7 +30,7 @@ const projectData = [
   {
     name: "Blog App",
     code_link: "https://github.com/anonymous372/Blog-App",
-    live_link: "https://blogapp-anonymous372.herokuapp.com/",
+    live_link: "",
     desc: "This is a Blog App where you can Create, Read, Update and Delete a blog. Beautiful and Responsive Web Design",
     img: img2,
     vid: "/",
@@ -38,7 +38,7 @@ const projectData = [
   {
     name: "Holdlinfo Clone",
     code_link: "https://github.com/anonymous372/Holdlinfo",
-    live_link: "https://holdlinfo-clone.herokuapp.com/",
+    live_link: "",
     desc: "This is a clone of site Holdlinfo.com. Here you can get current value of some of the famous cryptocurrencies. I have used the WazirX APi to fetch data",
     img: img3,
     vid: "/",
