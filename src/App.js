@@ -11,6 +11,13 @@ import Footer from "./components/Footer/Footer";
 const App = () => {
   const [theme, setTheme] = useState("light");
   const backgroundClass = theme === "light" ? "#f0f0f0" : "#202020";
+  useEffect(() => {
+    // fetch theme from local storage
+    const localTheme = localStorage.getItem("theme");
+    if (localTheme) {
+      setTheme(localTheme);
+    }
+  }, []);
   return (
     <div id="app" style={{ backgroundColor: backgroundClass }}>
       <Navbar setTheme={setTheme} theme={theme} />

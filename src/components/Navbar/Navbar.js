@@ -5,8 +5,9 @@ import "./Navbar.css";
 
 const Navbar = ({ theme, setTheme }) => {
   const toggleTheme = () => {
-    if (theme === "light") setTheme("dark");
-    else setTheme("light");
+    let newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
   };
   const shadowClassBtn =
     theme === "light"
