@@ -14,7 +14,7 @@ const projectData = [
   {
     name: "Merlin",
     code_link: "https://github.com/anonymous372/Merlin",
-    live_link: "https://anonymous372-merlin.netlify.com/",
+    live_link: "https://anonymous372-merlin.netlify.app/",
     desc: "This is a MERN stack application with authentication & authorization. You can explore the available birds and add them to your watchlist",
     img: img0,
     vid: "/",
