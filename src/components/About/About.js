@@ -21,11 +21,12 @@ const About = ({ theme }) => {
         <div id="about-txt">
           <div>
             <div id="about-head-txt">
-              Hi, I am <span>Sourabh Shukla</span>.
+              Hey there!, its <span>Sourabh Shukla</span> here.
             </div>
-            I am currently doing my BSc(H) Computer Science from Delhi
-            University. I am interested in Software Development using{" "}
-            <span>MERN</span> stack. I also love doing Competitive Programming.
+            I'm a software engineer with a passion for turning ideas into reality
+            Currently pursuing my <span>MCA</span> at <span>NIT Karnataka</span>.
+            With solid work experience and knack for different technologies.
+            My favorite sport these days is DSA 😉.
           </div>
         </div>
         <img id="my_img" src={myImg} style={imgClass} />
