@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./About.css";
 
-import myImg from "../../images/me_new.png";
+import myImg from "../../images/me_new2.png";
 
 const About = ({ theme }) => {
   const [flag, setFlag] = useState(true);
